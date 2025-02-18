@@ -61,7 +61,7 @@ br.clear {
 	max-width:1200px;
 }
 
-section.header{
+section#header{
     width: 100%;
     height: 135px;
 	border-bottom: 1px solid #d3d3d3;
@@ -113,7 +113,7 @@ div.middle ul{
 	align-items: center;
 }
 div.middle ul li{
-	margin-right: 12px;
+	margin-right: 24px;
 }
 div.middle ul li a:hover{
 	text-decoration: underline;
@@ -140,7 +140,7 @@ div.search{
 }
 
 
-.spotlight{
+#spotlight{
 margin-top: 24px;
 }
 .banner{
@@ -198,9 +198,21 @@ div.left-bottom a:hover{
 	height: 90%;
 }
 
-.categories{
- margin-top: 32px;
- margin-bottom: 40px;
+#categories{
+	padding-bottom: 48px;
+	margin-top: 32px;
+	margin-bottom: 40px;
+	position: relative;
+}
+#categories:after{
+	content: '';
+	display: block;
+	width: 90%;
+	border: 1px solid #0000004D;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
 }
 .red-label{
 	display: flex;
@@ -243,9 +255,14 @@ li.item a{
 }
 li.item h6{
 	margin-top: 10px;
+	font-size: 16px;
+	font-family: "Oswald", serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-weight: 300;
 }
 
-.products{
+#products{
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
@@ -370,13 +387,13 @@ div.change2{
 	border-radius: 50%;
 	background-color: #00ff65;
 }
-.view-all-button{
+#view-all-button{
 	margin: 0 auto;
 	width: 90%;
 	text-align: center;
 	margin-bottom: 100px;
 }
-.view-all-button a{
+#view-all-button a{
 	background-color: #db4444;
 	color: #fff;
 	padding: 12px 18px;
@@ -447,6 +464,7 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+	margin-bottom: 16px;
 }
 
 .footer-column {
@@ -458,7 +476,7 @@ footer {
 	margin-bottom: 12px;
 }
 h3 {
-    font-size: 18px;
+    font-size: 24px;
     margin-bottom: 12px;
 }
 
@@ -675,7 +693,7 @@ h3 {
 	div.left-mid h2 {
 		font-size: 38px;
 	}
-	.view-all-button a{
+	#view-all-button a{
 		width: 20%;
 	}
 	.service-item h6 {
@@ -732,7 +750,7 @@ h3 {
 	li.item{
 		padding: 20px;
 	}
-	.view-all-button a{
+	#view-all-button a{
 		width: 28%;
 	}
 	.service-container{
@@ -765,7 +783,7 @@ h3 {
 	.product-item{
 		width: 46%;
 	}
-	.view-all-button a{
+	#view-all-button a{
 		width: 35%;
 	}
 	.service-item{
@@ -814,7 +832,7 @@ h3 {
 	.product-item {
         width: 44%;
     }
-	.view-all-button a{
+	#view-all-button a{
 		width: 40%;
 	}
 	.app-links img{
