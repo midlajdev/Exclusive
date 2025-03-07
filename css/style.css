@@ -196,6 +196,7 @@ div.left-bottom a:hover{
 }
 .banner div.right img{
 	height: 90%;
+	width: 100%;
 }
 
 #categories{
@@ -895,6 +896,12 @@ h3 {
 	.qr-code{
 		display: none;
 	}
+	.headcontent{
+		margin-top: 20px;
+	}
+	div.left h1 {
+        font-size: 24px;
+    }
 
 }
 
