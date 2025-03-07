@@ -202,9 +202,9 @@ div.left-bottom a:hover{
 	padding-bottom: 48px;
 	margin-top: 32px;
 	margin-bottom: 40px;
-	position: relative;
+	/* position: relative; */
 }
-#categories:after{
+/* #categories:after{
 	content: '';
 	display: block;
 	width: 90%;
@@ -213,7 +213,7 @@ div.left-bottom a:hover{
 	bottom: 0;
 	left: 50%;
 	transform: translateX(-50%);
-}
+} */
 .red-label{
 	display: flex;
 	align-items: center;
@@ -247,6 +247,10 @@ li.item{
 	flex-direction:column;
 	align-items: center;
 	width: 14%;
+}
+li.item:hover{
+	background-color: #db4344;
+	cursor: pointer;
 }
 li.item a{
 	display: flex;
@@ -396,11 +400,9 @@ div.change2{
 #view-all-button a{
 	background-color: #db4444;
 	color: #fff;
-	padding: 12px 18px;
+	padding: 16px 48px;
 	border-radius: 4px;
 	margin: 0 auto;
-	display: block;
-	width: 16%;
 	
 }
 
@@ -458,6 +460,15 @@ footer {
     color: #fff;
     padding: 120px 80px 20px 80px;
     font-family: Arial, sans-serif;
+	position: relative;
+}
+hr.footr {
+  border: 0;
+  border-top: 2px solid #2d2d2d;
+  border-radius: 50px;
+  width: 100vw;
+  position: absolute;
+  left: 0;
 }
 
 .footer-container {
@@ -557,7 +568,7 @@ h3 {
 
 .footer-bottom {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
     font-size: 14px;
     color: #777;
 }
@@ -816,8 +827,22 @@ h3 {
 	div.left h1 {
 		font-size: 14px;
 	}
+	.banner{
+		flex-flow: wrap-reverse;
+		justify-content: center;
+	}
 	.banner div.right {
-		width: 48%;
+		width: 100%;
+		justify-content: center;
+	}
+	.banner div.right img{
+		width: 240px;
+		display: block;
+	}
+	.banner div.left{
+		width: 100%;
+		margin-top: 0;
+		margin: 0 auto;
 	}
 	ul.item-container{
 		flex-wrap: wrap;
@@ -847,6 +872,29 @@ h3 {
 	.detail-container{
 		margin-top: 0;
 	}
+	div.middle ul{
+		display: none;
+	}
+	.product-top top-left img{
+		width: 100px;
+		height: 120px;
+	}
+	.delivery-opt{
+		width: 100%;
+	}
+	.d-left{
+		height: 290px;
+	}
+	.footer-column:first-child{
+		width: 80%;
+		margin-bottom: 40px;
+	}
+	.social-icons{
+		gap: 7px;
+	}
+	.qr-code{
+		display: none;
+	}
 
 }
 
@@ -867,7 +915,8 @@ h3 {
 		align-items: center;
 	}
 	.banner div.right img {
-		
+		width: 100%;
+		display: block;
 	}
 	.banner div.left {
 		width: 100%;
